@@ -1,7 +1,7 @@
 "use client";
 import Brain from "@/components/brain";
 import { motion, useInView, useScroll } from "framer-motion";
-import Image from "next/image";
+// Remove unused Image import
 import { useRef } from "react";
 
 const AboutPage = () => {
@@ -10,7 +10,6 @@ const AboutPage = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef = useRef();
-  // const isSkillRefInView = useInView(skillRef, {once:true});
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
   const experienceRef = useRef();
@@ -29,17 +28,12 @@ const AboutPage = () => {
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
-            
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            Passionate about technology and its multifaceted applications. Specializing in Front End development, adept in crafting user-centric digital experiences. Enthusiastic about automation, exploring ways to streamline processes and enhance efficiency. Fascinated by the realms of Data Science & Machine Learning, constantly seeking opportunities to delve deeper into analytics and predictive modeling. Committed to Cybersecurity, understanding the intricacies of safeguarding digital assets in an increasingly interconnected world. Outside of the digital realm, I'm a dedicated practitioner of Brazilian Jiu Jitsu, finding balance and discipline through martial arts.
-Engaged in a dynamic journey of learning and growth as a Year 2 Student at Singapore Polytechnic, pursuing a Diploma in Infocomm Security Management. Actively involved in coursework, projects, and extracurricular activities to broaden my knowledge and hone my skills in the realm of Information Security. Constantly seeking opportunities to apply theoretical knowledge to real-world scenarios and contribute meaningfully to the field.
-
-
+              Passionate about technology and its multifaceted applications. Specializing in Front End development, adept in crafting user-centric digital experiences. Enthusiastic about automation, exploring ways to streamline processes and enhance efficiency. Fascinated by the realms of Data Science & Machine Learning, constantly seeking opportunities to delve deeper into analytics and predictive modeling. Committed to Cybersecurity, understanding the intricacies of safeguarding digital assets in an increasingly interconnected world. Outside of the digital realm, I&apos;m a dedicated practitioner of Brazilian Jiu Jitsu, finding balance and discipline through martial arts. Engaged in a dynamic journey of learning and growth as a Year 2 Student at Singapore Polytechnic, pursuing a Diploma in Infocomm Security Management. Actively involved in coursework, projects, and extracurricular activities to broaden my knowledge and hone my skills in the realm of Information Security. Constantly seeking opportunities to apply theoretical knowledge to real-world scenarios and contribute meaningfully to the field.
             </p>
-            
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -93,26 +87,21 @@ Engaged in a dynamic journey of learning and growth as a Year 2 Student at Singa
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Next.js
               </div>
-      
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 MongoDB
               </div>
-              
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Node.js
               </div>
-              
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Express.js
               </div>
-              
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Python
               </div>
-              
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Figma
               </div>
@@ -171,7 +160,7 @@ Engaged in a dynamic journey of learning and growth as a Year 2 Student at Singa
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  During my Secure Coding Module, I consistently engage in the development of robust and secure code. Additionally, I actively participate in pentesting events, assignments, and exams as part of my coursework.{" "}
+                  During my Secure Coding Module, I consistently engage in the development of robust and secure code. Additionally, I actively participate in pentesting events, assignments, and exams as part of my coursework.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -213,7 +202,7 @@ Engaged in a dynamic journey of learning and growth as a Year 2 Student at Singa
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I used Node.js, Express, mySQL, and bootstrap to build a eCommerce website.{" "}
+                    I used Node.js, Express, mySQL, and bootstrap to build an eCommerce website.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -232,7 +221,7 @@ Engaged in a dynamic journey of learning and growth as a Year 2 Student at Singa
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I developed games using python, such as a simple hang men game. Using Figma i designed websites and using basic bootstap, css and html to develop a personal portfolio.{" "}
+                    I developed games using python, such as a simple hangman game. Using Figma, I designed websites and used basic bootstrap, CSS, and HTML to develop a personal portfolio.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
