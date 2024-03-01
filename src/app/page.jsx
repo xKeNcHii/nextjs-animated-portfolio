@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Homepage = () => {
@@ -16,11 +15,11 @@ const Homepage = () => {
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold">
-          Showcasing Innovative Projects, Shaping the Future.
+            Showcasing Innovative Projects, Shaping the Future.
           </h1>
           {/* DESC */}
           <p className="md:text-xl">
-          Welcome to my portfolio page, where I bring creativity and technology together. With a passion for crafting digital experiences and expertise in code, I present a range of projects demonstrating my dedication to quality and innovation.
+            Welcome to my portfolio page, where I bring creativity and technology together. With a passion for crafting digital experiences and expertise in code, I present a range of projects demonstrating my dedication to quality and innovation.
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
